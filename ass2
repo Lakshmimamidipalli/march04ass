@@ -1,0 +1,19 @@
+A=[]
+n=int(input('how many scores:'))
+for i in range(0,n):
+    number=int(input('enter scores:'))
+    A.append(number)
+A.sort()
+A=list(dict.fromkeys(A))
+print('New list:',A)
+print('Runner up score:',A[-3])
+
+
+output
+how many scores:4
+enter scores:10
+enter scores:30
+enter scores:20
+enter scores:20
+New list: [10, 20, 30]
+Runner up score: 10
